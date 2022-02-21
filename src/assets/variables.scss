@@ -1,0 +1,24 @@
+/*media screen*/
+$screensafe:30px;
+$container_xl:1200px;
+$container_lg:992px;
+$container_md:768px;
+$container_sm:576px;
+
+/*color*/
+$colorWhite: rgba(#fff, 0.65);
+$activeColor: rgba(#fff, 0.9);
+$error:#cd3636;
+
+@mixin flex(
+  $justify-content: null,
+  $align-items: null,
+  $flex-direction: null,
+  $flex-wrap: null
+) {
+  align-items: $align-items;
+  display: flex;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+}
