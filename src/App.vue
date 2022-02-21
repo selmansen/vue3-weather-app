@@ -254,8 +254,8 @@ main {
   height: 100vh;
   min-height: 391px;
   padding: 30px;
-  backdrop-filter: blur(10px);
   background: rgba(32, 46, 60, 0.7);
+  backdrop-filter: blur(10px);
   transition: max-width 0.4s, transform 0.4s;
   @media screen and(max-width:$container_xl) {
     transform: translateX(100%);
