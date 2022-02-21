@@ -247,12 +247,12 @@ main {
   }
 }
 .cities {
-  position: fixed;
+  position: absolute;
   max-width: 500px;
   width: 100%;
   right: 0;
   z-index: 11;
-  height: 100vh;
+  height: 100%;
   min-height: 391px;
   padding: 30px;
   background: rgba(32, 46, 60, 0.7);
@@ -260,6 +260,7 @@ main {
   transition: max-width 0.4s, transform 0.4s;
   @media screen and(max-width:$container_xl) {
     transform: translateX(100%);
+    background: rgba(32, 46, 60, 0.8);
     backdrop-filter: blur(20px);
     padding: 100px 0px 15px;
     z-index: 5;
