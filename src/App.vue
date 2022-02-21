@@ -184,6 +184,7 @@ main {
   background-size: cover;
   transition: background 0.4s;
   position: relative;
+  overflow: hidden;
   &:before {
     content: "";
     background: -webkit-linear-gradient(#34495f, transparent);
@@ -246,7 +247,7 @@ main {
   }
 }
 .cities {
-  position: absolute;
+  position: fixed;
   max-width: 500px;
   width: 100%;
   right: 0;
