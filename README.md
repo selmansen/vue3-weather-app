@@ -1,6 +1,7 @@
 # Weather App
 
 [Preview Link](https://flamboyant-poitras-2eac8c.netlify.app/)!
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
