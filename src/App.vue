@@ -260,8 +260,7 @@ main {
   transition: max-width 0.4s, transform 0.4s;
   @media screen and(max-width:$container_xl) {
     transform: translateX(100%);
-    background: rgba(32, 46, 60, 0.8);
-    backdrop-filter: blur(20px);
+    background: rgba(32, 46, 60, 0.9);
     padding: 100px 0px 15px;
     z-index: 5;
     &.active {
