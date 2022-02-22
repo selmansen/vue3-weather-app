@@ -116,6 +116,7 @@ export default {
     <div class="cities__list-name" v-for="(city, i) in cities" :key="i">
       <h4 @click="getWeatherInfo">{{ city }}</h4>
       <RouterLink
+        title="Weekly Forecast"
         :to="'/detail/' + city.toLowerCase()"
         class="cities__list-calendar"
       >
@@ -171,14 +172,18 @@ export default {
         cursor: pointer;
         margin-right: -2px;
         svg {
-          width: 26px;
+          width: 22px;
           fill: $colorWhite;
+          transition: fill 0.3s;
+          &:hover {
+            fill: $activeColor;
+          }
         }
       }
     }
     &-name {
       @include flex(space-between, center);
-      padding: 6px 0px;
+      padding: 8px 0px;
       h4 {
         font-size: 16px;
         cursor: pointer;
@@ -193,7 +198,7 @@ export default {
       cursor: pointer;
       svg {
         fill: $colorWhite;
-        width: 22px;
+        width: 20px;
         transition: fill 0.3s;
         &:hover {
           fill: $activeColor;

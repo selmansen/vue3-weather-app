@@ -75,13 +75,13 @@ export default {
     font-weight: 600;
     font-size: 16px;
     color: $activeColor;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(#fff, 0.3);
   }
   &-item {
     @include flex(space-between, center);
-    padding: 6px 0px;
+    padding: 7px 0px;
     color: $colorWhite;
     & > div {
       width: 15%;
@@ -98,11 +98,15 @@ export default {
   }
   &-heading {
     color: $activeColor;
+    padding: 12.25px 0px;
+    & > div {
+      font-weight: 600;
+    }
   }
   &--icon {
-    width: 40px;
+    width: 55px;
     height: auto;
-    margin: -5px -3px -8px;
+    margin: -11px -3px -18px;
   }
 }
 </style>
